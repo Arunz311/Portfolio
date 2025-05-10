@@ -628,13 +628,7 @@ a {
 * 6. Home
 /* ---------------------------------------------- */
 
-.section-home {
-    height: 100vh;
-    position: relative;
-    background-image: url("../images/arunspic.jpg");
-    background-size: cover;
-    background-position: center;
-}
+
 
 .overlay {
     position: relative;
