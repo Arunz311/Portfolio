@@ -221,7 +221,7 @@
             loadImage: function () {
                 var e = this;
                 s = this.context;
-                var imagePath = '/images/arunspic.jpg'; 
+                var imagePath = '../images/arunspic.jpg'; 
                 var t = imagePath;
                     if (this.imageSource = t,
                         this.imageSource) {
