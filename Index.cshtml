@@ -1,0 +1,884 @@
+﻿@page
+@model IndexModel
+@{
+    Layout = null;
+}
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hello :) I am Arun</title>
+	<meta name="description" content="Arunachary - Portfolio">
+	<meta property='og:image' content='/images/resume.jpg'/>
+	<meta name="keywords" content="blog, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard">
+	<meta name="author" content="Adithya">
+	<meta name="theme-color" content="#2a2d35">
+	<link rel="shortcut icon" href="github/GitHub-Mark-Light-64px.png" type="image/x-icon">
+
+	<!-- Vendor-->
+	<link rel="stylesheet" href="css/vendor.css">
+	<script src="https://kit.fontawesome.com/43e5b1ec09.js" crossorigin="anonymous"></script>	
+
+	<!-- Settings-panel -->
+	<link href="css/settings.css" rel="stylesheet">
+
+	<!-- Custom style Css -->
+	<link href="css/custom.css" rel="stylesheet">
+
+	<!-- JustinTemplate style Css -->
+	<link rel="stylesheet" href="css/justin-red.css">
+	<style>
+		/* Container for the slider */
+		/* Container for the skill icons */
+		.skill-icons-container {
+			background: #ffffff0a;
+			padding: 30px;
+			border-radius: 16px;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+			margin-top: 20px;
+		}
+
+		.skill-icons {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 24px;
+		}
+
+		.skill-item {
+			text-align: center;
+			transition: transform 0.2s ease;
+		}
+
+			.skill-item img {
+				width: 60px;
+				height: 60px;
+				margin-bottom: 10px;
+				transition: transform 0.3s ease;
+			}
+
+			.skill-item:hover img {
+				transform: scale(1.1);
+			}
+
+			.skill-item p {
+				margin: 0;
+				font-size: 14px;
+				font-weight: 600;
+				color: #ffffff59;
+			}
+
+			.skill-item:hover p {
+				color: #007bff;
+			}
+
+		/* Responsive Adjustments */
+		media (max-width: 768px) {
+			.skill-icons-container
+
+		{
+			padding: 20px;
+		}
+
+		.skill-item img {
+			width: 50px;
+			height: 50px;
+		}
+
+		.skill-item p {
+			font-size: 12px;
+		}
+
+		}
+	</style>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+
+
+
+	<!-- START: Preloader -->
+	<div id="preloader" class="preloader">
+		<div class="spinner-grow text-white" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+	<!-- END: Preloader -->
+
+    <div class="page-wrapper">
+
+		<nav class="navbar navbar-expand-lg navbar-custom navbar-light fixed-top">
+			<div class="container">
+
+				<a class="navbar-brand  mr-auto " href="index.html">Arun
+					<!-- <img src="assets/images/logo.png" alt="Logo"> -->
+				</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+					<svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="60"><path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"/><path class="line middle" d="m 30,50 h 40"/><path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"/></svg>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarToggler">
+					<ul class="navbar-nav ml-auto">
+						<li><a class="nav-link active" href="#home">Home</a></li>
+						<li><a class="nav-link" href="#services">Skills</a></li>
+						<li><a class="nav-link" href="#resume">Experience</a></li>
+						<li><a class="nav-link" href="#blog">Projects</a></li>
+@* 						<li><a class="nav-link" href="#testimony">Recommendations</a></li>
+ *@						<li><a class="nav-link" href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- START: HOME -->		
+    	<section class="section-home " id="home">
+    		<div class="overlay d-flex justify-content-center align-items-center">
+    			<div class="overlay-wrap section-head">
+	    			<span class="mb-2">Hello, I am</span>
+	 	   			<h1>Arunachary</h1>
+					<ul class="about-desc-social mt-4 list-unstyled list-inline">
+						<li class="list-inline-item"><a href="https://wa.me//+917569500804" target="_blank"><i class="fab fa-whatsapp icon-size "></i></a></li>
+						<li class="list-inline-item"><a href="https://www.linkedin.com/in/arun-akavarapu-742223214/" target="_blank"><i class="fab fa-linkedin-in icon-size"></i></a></li>
+						<li class="list-inline-item"><a href="https://bit.ly/GitHubArunz" target="_blank"><i class="fab fa-github icon-size"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.instagram.com/mclicks_311/" target="_blank"><i class="fab fa-instagram icon-size"></i></a></li>
+						<li class="list-inline-item"><a href="https://web.telegram.org/a/" target="_blank"><i class="fab fa-telegram icon-size"></i></a></li>
+						<li class="list-inline-item">
+							<a href="mailto:yourname@example.com" target="_blank">
+								<i class="fas fa-envelope icon-size"></i>
+							</a>
+						</li>
+
+					</ul>
+					<style>
+						.icon-size {
+							font-size: 30px; /* Adjust the size to your preference */
+ 						}
+					</style>
+
+ 	   			</div> 
+ 	   		</div>
+    	</section>	
+    	<!-- END: HOME -->
+
+		<!-- START: ABOUT -->
+		<section class="section section-about" id="about">
+
+			<div class="section-about-wrap">
+
+				<div class="row justify-content-center align-items-center">
+					
+					<div class="col-md-7">
+						<div class="about-desc">
+							<div class="about-desc-content">
+								<h2>About Me</h2>
+								<p class="mt-4 font-weight-light">
+									.NET Developer | Learning AI | Passionate About Tech and Innovation.<br><br>
+
+									I’m a .NET Developer with a strong interest in learning and creativity. I work with technologies in the .NET ecosystem and use modern frameworks for building desktop and web applications. I’m also exploring how to create intelligent solutions using AI.<br><br>
+																		
+									I enjoy solving problems, learning new things, and working on interesting projects. I like being part of tech communities where I can learn from others and share ideas. I'm always looking for ways to grow my skills and create better solutions.
+
+									My goal is to keep improving, stay curious, and build useful, innovative tools that make a difference. feel free to connect me below media.
+								</p>
+							</div>
+							
+
+						</div>
+					</div>
+
+					<div class="col-md-5 d-none d-md-block">
+						<img class="img-fluid img-thumbnail" src="images/arun.jpg" alt="About Picture">
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+		<!-- END: ABOUT -->
+
+		<!-- START: SERVICES -->
+		<section class="section section-skills" id="services">
+			<div class="container">
+				<div class="section-head">
+					<span>WHAT I DO</span>
+					<h2>Skills</h2>
+				</div>
+
+				<div class="skills-grid">
+					<div class="skill-card">
+						<img src="../images/dotnet2.jpg" alt=".NET" />
+						<h5>.NET Framework & .NET Core</h5>
+						<p>
+							Microsoft platforms used to build and run applications.
+							.NET Core is the modern, cross-platform, open-source version of .NET, while .NET Framework is Windows-only and suited for legacy apps.
+						</p>
+					</div>
+					<div class="skill-card">
+						<img src="../images/webgif.gif" alt="Web Dev" />
+						<h5>Web Development</h5>
+						<p>Web development involves creating websites and web apps using technologies like HTML, CSS, JavaScript, and backend frameworks.</p>
+					</div>
+					<div class="skill-card">
+						<img src="../images/backendimage.jpg" alt="Backend" />
+						<h5>Back-end Development</h5>
+						<p>I work on backend development, managing databases and integrating with APIs to support application functionality.</p>
+					</div>
+					<div class="skill-card">
+						<img src="../images/uiuxgif.gif" alt="UI/UX" />
+						<h5>UI/UX Basics</h5>
+						<p>I focus on creating clean, user-friendly interfaces with a good sense of UI/UX design.</p>
+					</div>
+					<div class="skill-card">
+						<img src="../images/aigif.gif" alt="AI" />
+						<h5>AI & Emerging Tech</h5>
+						<p>I explore and integrate AI-driven solutions and stay up-to-date with emerging technologies to enhance innovation and efficiency in my projects.</p>
+					</div>
+					<div class="skill-card">
+						<img src="../images/canvaimage.jpg" alt="Design" />
+						<h5>Canva & Visual Design</h5>
+						<p>I use Canva to create visually appealing designs for websites, presentations, and social media, ensuring a professional and engaging user experience.</p>
+					</div>
+					<div class="skill-card">
+						<img src="../images/languagesgif.gif" alt="Languages" />
+						<h5>Languages</h5>
+						<p>Fluent in English, Hindi, and Telugu — helpful for communication and collaboration.</p>
+					</div>
+					<div class="skill-card">
+						<img src="../images/workgif.gif" alt="Work Ethic" />
+						<h5>Work Ethic & Learning</h5>
+						<p>I stay motivated and give my best in any work I do. I'm always open to learning and improving myself.</p>
+					</div>
+					<div class="skill-card">
+						<img src="../images/idomuchgif2.gif" alt="Work Ethic" />
+						<h5>i do much more..</h5>
+						<p>I have many interests that keep me engaged and motivated. By exploring these, I am constantly strengthening myself and fostering a positive environment around me.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END: SERVICES -->
+		<style>
+			.section-skills .skills-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 40px;
+				margin-top: 40px;
+			}
+
+			.skill-card {
+				background: black;
+				border-radius: 12px;
+				overflow: hidden;
+				box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+				transition: transform 0.3s, box-shadow 0.3s;
+				padding-bottom: 20px;
+			}
+
+				.skill-card img {
+					width: 100%;
+					height: 180px;
+					object-fit: cover;
+				}
+
+				.skill-card h5 {
+					margin: 15px 20px 10px;
+					font-size: 18px;
+					color: #fff;
+				}
+
+				.skill-card p {
+					margin: 0 20px;
+					font-size: 14px;
+					color: #777;
+				}
+
+				.skill-card:hover {
+					transform: translateY(-5px);
+					box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+				}
+
+		</style>
+
+		<!-- START: RESUME -->
+		<section class="section section-dark section-resume" id="resume">
+			<div class="container">
+				<div class="section-head">
+					<span>My Resume</span>
+					<h2>Education & Experience</h2>
+				</div>
+
+				<div class="row mt-4">
+					<div class="col-sm-6 col-lg-6">
+						<h5 class="section-subHead mt-3"> My Education</h5>
+						<div class="resume-list b-box hover-state p-4 mt-4 wow fadeInUp" data-wow-duration="1.5s">
+							<div>
+								<h5>BTech - Electronics and communication Engineering</h5>
+								<h6 class="badge badge-dark d-inline-block my-3">Anurag group of institutions | 2017 - 2021</h6>
+								<p>I completed my BTech in Electronics and Communication with an 85% score, and it was truly a transformative experience. The challenges I faced, along with the knowledge I gained, not only helped me build a strong technical foundation but also pushed me to think creatively and tackle complex problems. Throughout my time at university, I actively participated in a range of projects, each one providing me with hands-on experience and shaping my growth as a professional.</p>
+							</div>
+						</div>
+						<div class="resume-list b-box hover-state p-4 mt-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
+							<div>
+								<h5>Higher Secondary Education(MPC)</h5>
+								<h6 class="badge badge-dark d-inline-block my-3">Kavitha Junior college | 2015 - 2017</h6>
+								<p>After completing my 10th grade, I moved on to Higher Secondary Education, where I focused on MPC stream. It was a challenging time, but I worked hard and was able to score an 83% overall. Despite the difficulties, I enjoyed the experience and learned a lot during that period.</p>
+							</div>
+						</div>
+						<div class="resume-list b-box hover-state p-4 mt-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".3s">
+							<div>
+								<h5>Secondary Education</h5>
+								<h6 class="badge badge-dark d-inline-block my-3">Vivekavardhini (CBSE) | 2014 - 2015</h6>
+								<p>During my SSC days, I scored around 85%. It was one of those golden times in life, full of memories and challenges. Like everyone else, I worked hard but also enjoyed the journey. It was a great experience that helped shape who I am today.</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-sm-6 col-lg-6">
+						<h5 class="section-subHead mt-3">My Experience</h5>
+						<div class="resume-list b-box hover-state p-4 mt-4 wow fadeInUp" data-wow-duration="1.5s">
+							<div>
+								<h5>ENLIVEN DIGITAL CONTENT</h5>
+								<h6 class="badge badge-dark d-inline-block my-3">jan 2025 - Present | RAJKOT GUJARATH</h6>
+								<p>
+									Currently, I work as a .NET Developer at Enliven Digital Content, a product-based company specializing in HMI solutions for CNC machines, including Syntec machine controllers. In this role, I develop and enhance .NET applications using C#, ASP.NET, and WinForms, focusing on performance optimization and building custom controls to improve user experience and functionality.
+								</p>
+								<br>
+								<p>
+									I collaborate with cross-functional teams to ensure our software meets the complex needs of CNC operations, including those with Syntec controllers, while maintaining high efficiency. This role has allowed me to strengthen my technical skills and contribute to creating scalable, user-friendly software solutions.
+								</p>
+
+							</div>
+						</div>
+						
+						<div class="resume-list b-box hover-state p-4 mt-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".3s">
+							<div>
+								<h5>INFOSYS</h5>
+								<h6 class="badge badge-dark d-inline-block my-3">Nov 2021 - Jul 2023 | PUNE MAHARASTRA</h6>
+								<p>At Infosys, I began my professional journey as an Application Developer, working on C# and WPF-based application development and feature enhancements. I played a key role in implementing software updates and contributed to an RPA automation initiative aimed at improving operational efficiency.</p>
+								<br>
+								<p>
+									My work involved resolving end-user issues, preparing detailed reports, and supporting both production and QA environments to ensure seamless functionality. I consistently collaborated with teams to deliver reliable, user-focused solutions while actively identifying ways to enhance existing processes. This experience helped sharpen my technical abilities and reinforced a solution-driven, collaborative approach to development.
+								</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+
+				<div class="row mt-4">
+					
+					<div class="col-12">
+						<h5 class="section-subHead mt-3">Coding Skills</h5>
+
+						<!-- Skill Icons Container -->
+						<div class="skill-icons-container">
+
+							<!-- Skills Icons -->
+							<div class="skill-icons">
+								<!-- Skill Item 1 -->
+								<div class="skill-item">
+									<img src="/icons/csharp4.png" alt="C#">
+									<p>C#</p>
+								</div>
+								<div class="skill-item">
+									<img src="/icons/java3.png" alt="Java">
+									<p>Java</p>
+								</div>
+								<!-- Skill Item 2 -->
+								<div class="skill-item">
+									<img src="/icons/wpf2.png" alt="WPF">
+									<p>WPF</p>
+								</div>
+								<!-- Skill Item 3 -->
+								<div class="skill-item">
+									<img src="/icons/html.png" alt="HTML">
+									<p>HTML</p>
+								</div>
+								<!-- Skill Item 4 -->
+								<div class="skill-item">
+									<img src="/icons/css2.png" alt="CSS">
+									<p>CSS</p>
+								</div>
+								<!-- Skill Item 5 -->
+								<div class="skill-item">
+									<img src="/icons/javascript.png" alt="javascript">
+									<p>javascript</p>
+								</div>
+								<!-- Skill Item 6 -->
+								<div class="skill-item">
+									<img src="/icons/sqlimage.png" alt="SQL">
+									<p>SQL</p>
+								</div>
+								<!-- Skill Item 7 -->
+								
+								
+							
+							
+							</div>
+
+						</div>
+					</div>
+				</div>
+						
+			</div>
+		</section>
+		<!-- END: RESUME -->
+
+
+		<section class="section section-light section-blog" id="blog">
+			<div class="container">   
+				<div class="section-head">
+					<span>Achievments</span>
+					<h2>My Projects</h2>
+				</div>                 
+				<div class="mt-5">
+					<div class="swiper-container swiper-blog">
+						<div class="swiper-wrapper">
+
+
+							<a href="https://github.com/AdityaSeth777/Kryptos" target="_blank"
+							class="swiper-slide blog-list b-box hover-state d-block mb-4">
+							<div class="blog-list--img wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">
+									<img src="/icons/Csharp4.png" alt="Kryptos" class="img-fluid">
+								<div class="blog-list--details d-flex justify-content-center align-items-center">
+									<div class="blog-list--details-in">
+										<p class="blog-by text-white">Kryptos</p>
+										<span class="blog-duration text-white">Blockchain Messaging</span>
+									</div>
+								</div>
+							</div>
+							<div class="blog-list--desc p-3">
+									<p>Riddle Chat is a platform where users can share their ideas, thoughts, and riddles, while connecting with others. Unlike typical messaging apps, Riddle Chat allows you to post and engage with people over shared interests. You can start conversations, solve riddles, and interact in real-time, making it a fun and interactive way to connect with others.</p>
+								<span class="d-block text-center mt-3 font-weight-bold blog-cat">Razor,C#,HTML.CSS,JS,SignalIR,SQLDB,</span>
+							</div>
+						</a>
+
+						<a href="https://github.com/AdityaSeth777/ShieldK8s" target="_blank"
+						class="swiper-slide blog-list b-box hover-state d-block mb-4">
+						<div class="blog-list--img wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">
+							<img src="images/shieldk8s.jpg" alt="ShieldK8s" class="img-fluid">
+							<div class="blog-list--details d-flex justify-content-center align-items-center">
+								<div class="blog-list--details-in">
+									<p class="blog-by text-white">Kryptos</p>
+									<span class="blog-duration text-white">Blockchain Messaging</span>
+								</div>
+							</div>
+						</div>
+						<div class="blog-list--desc p-3">
+									<p>Strangers Chat is a random video chat application that lets users connect with complete strangers, similar to Omegle. It offers a unique way to meet new people, engage in conversations, and build friendships from anywhere in the world. With no prior connections required, Strangers Chat helps foster spontaneous, fun, and meaningful interactions with people from diverse backgrounds.</p>
+									<span class="d-block text-center mt-3 font-weight-bold blog-cat">C#,HTML.CSS,JS,SignalIR,RPage</span>
+						</div>
+					</a>
+
+
+
+							<a href="https://github.com/Rohantech231/WorkX/" target="_blank"
+							class="swiper-slide blog-list b-box hover-state d-block mb-4">
+							<div class="blog-list--img wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">
+								<img src="images/workx.png" alt="WorkX" class="img-fluid">
+								<div class="blog-list--details d-flex justify-content-center align-items-center">
+									<div class="blog-list--details-in">
+										<p class="blog-by text-white">WorkX</p>
+										<span class="blog-duration text-white">Freelancer Job Portal</span>
+									</div>
+								</div>
+							</div>
+							<div class="blog-list--desc p-3">
+								<p>WorkX is a full-stack job platform for freelancers and businesses, built with Django and React, integrating Google Firebase, JWT, DRF APIs, Elasticsearch for advanced search, PostgreSQL for data storage, and AWS for scalable deployment.</p>
+								<span class="d-block text-center mt-3 font-weight-bold blog-cat">React, Django, PostgreSQL, AWS</span>
+							</div>
+						</a>
+
+						<a href="https://pypi.org/project/Audio-SpectraCLI/" target="_blank"
+						class="swiper-slide blog-list b-box hover-state d-block mb-4">
+						<div class="blog-list--img wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">
+							<img src="images/audio.jpeg" alt="WorkX" class="img-fluid">
+							<div class="blog-list--details d-flex justify-content-center align-items-center">
+								<div class="blog-list--details-in">
+									<p class="blog-by text-white">Audio-SpectraCLI</p>
+									<span class="blog-duration text-white">Real-time FFT Spectrum Viewer</span>
+								</div>
+							</div>
+						</div>
+						<div class="blog-list--desc p-3">
+							<p>AudioSpectraCLI offers real-time FFT visualization of audio input, with customizable parameters (duration, sampling rate, block size, and frequency range). It features PyQt5 modules, Gaussian filtering, and a dynamic user-controlled interface.</p>
+							<span class="d-block text-center mt-3 font-weight-bold blog-cat">React, Django, PostgreSQL, AWS</span>
+						</div>
+					</a>
+
+							@* <a href="https://github.com/AdityaSeth777/PymPay.git" target="_blank"
+								class="swiper-slide blog-list b-box hover-state d-block mb-4">
+								<div class="blog-list--img wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">
+									<img src="images/pympay.png" alt="PymPay" class="img-fluid">
+									<div class="blog-list--details d-flex justify-content-center align-items-center">
+										<div class="blog-list--details-in">
+											<p class="blog-by text-white">PymPay</p>
+											<span class="blog-duration text-white">Online Banking Software</span>
+										</div>
+									</div>
+								</div>
+								<div class="blog-list--desc p-3">
+									<p>PymPay is a web-based application that allows users to perform various banking operations such as deposit, withdraw, transfer, and check balance. The application has separate access for admin, client, and staff roles with real-time database updation.</p>
+									<span class="d-block text-center mt-3 font-weight-bold blog-cat">JavaScript, PHP</span>
+								</div>
+							</a>
+
+							<a href="https://microsoft-aurora.tech/" target="_blank"
+								class="swiper-slide blog-list b-box hover-state d-block mb-4">
+								<div class="blog-list--img wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">
+									<img src="images/aurora.jpg" alt="Microsoft Aurora" class="img-fluid">
+									<div class="blog-list--details d-flex justify-content-center align-items-center">
+										<div class="blog-list--details-in">
+											<p class="blog-by text-white">Microsoft Aurora</p>
+											<span class="blog-duration text-white">Website for Microsoft LSA event</span>
+										</div>
+									</div>
+								</div>
+								<div class="blog-list--desc p-3">
+									<p> I led and collaborated with a team of 2 developers and built this website for the upcoming
+Microsoft event scheduled to be held in Kolkata, West Bengal. It is a dynamic webpage and Townscript API built into it for the online paid registrations.</p>
+									<span class="d-block text-center mt-3 font-weight-bold blog-cat">HTML, CSS, Js</span>
+								</div>
+							</a>
+
+							<a href="https://envisage23-iictech.vercel.app/" target="_blank"
+								class="swiper-slide blog-list b-box hover-state d-block mb-4">
+								<div class="blog-list--img wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">
+									<img src="images/envisage.jpg" alt="Envisage TMSL" class="img-fluid">
+									<div class="blog-list--details d-flex justify-content-center align-items-center">
+										<div class="blog-list--details-in">
+											<p class="blog-by text-white">Envisage TMSL</p>
+											<span class="blog-duration text-white">Dynamic Event Website for 2023-24</span>
+										</div>
+									</div>
+								</div>
+								<div class="blog-list--desc p-3">
+									<p>Envisage is the official E-Summit of Techno Main Salt Lake. It was the platform for budding entrepreneurs to showcase
+									the power of their ideas and to be appreciated and mentored by the best in the fields. I was the Project Leader
+									here, leading a team of 6 students.</p>
+									<span class="d-block text-center mt-3 font-weight-bold blog-cat">Next Js, Tailwind CSS</span>
+								</div>
+							</a>
+							
+							<a href="https://www.iictmsl.com/" target="_blank" class="swiper-slide blog-list b-box hover-state d-block mb-4">
+								<div class="blog-list--img wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".2s">
+									<img src="projects/IIC.png" alt="Website Project" class="img-fluid">
+									<div class="blog-list--details d-flex justify-content-center align-items-center">
+										<div class="blog-list--details-in">
+											<p class="blog-by text-white">IIC Website</p>
+											<span class="blog-duration text-white">Official Website v2.1</span>
+										</div>
+									</div>
+								</div>
+								<div class="blog-list--desc p-3">
+									<p>It is the official website of IIC TMSL, the official e-cell by the Ministry of Human Resource Development (MHRD), Govt. of
+									India, for fostering higher academic and entrepreneurial knowledge. Features include: Dark Mode, Dynamic Webpages, and more. </p>
+									<span class="d-block text-center mt-3 font-weight-bold blog-cat">Website - Next Js, Tailwind CSS</span>
+								</div>
+							</a>
+							<a href="https://github.com/AdityaSeth777/Abstract-Connoisseurs" target="_blank" class="swiper-slide blog-list b-box hover-state d-block mb-4">
+								<div class="blog-list--img wow fadeIn" data-wow-duration="1.5s">
+									<img src="download.png" alt="App Dev" class="img-fluid">
+									<div class="blog-list--details d-flex justify-content-center align-items-center">
+										<div class="blog-list--details-in">
+											<p class="blog-by text-white">2048 Game</p>
+											<span class="blog-duration text-white">Project for Google Hackathon</span>
+										</div>
+									</div>
+								</div>
+								<div class="blog-list--desc p-3">
+									<p>This was an app building hackathon organised by GDSC TMSL. I participated in it and built the 2048 game which is quite popular. I participated in the Hackathon under the name of "Abstract-Connoisseurs", since we were instructed to pick unique names.</p>
+									<span class="d-block text-center mt-3 font-weight-bold blog-cat">Android - Kotlin</span>
+								</div>
+							</a>
+
+							<a href="https://github.com/AdityaSeth777/Twitter_GDG_CCD" target="_blank" class="swiper-slide blog-list b-box hover-state d-block mb-4">
+								<div class="blog-list--img wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">
+									<img src="projects/twitter/twit.jpg" alt="Python Bot" class="img-fluid">
+									<div class="blog-list--details d-flex justify-content-center align-items-center">
+										<div class="blog-list--details-in">
+											<p class="blog-by text-white">Twitter Master-Bot</p>
+											<span class="blog-duration text-white">Project for Google DG CCD Hackathon 2022</span>
+										</div>
+									</div>
+								</div>
+								<div class="blog-list--desc p-3">
+									<p>Twitter-Bot is an automation bot using built using Tweepy. This replaces the use of Twitter API as it is costly and takes much time to get access to. You can use it to post tweets, retweet based on hashtags and like tweets on the homepage or like tweets based on hashtags.</p>
+									<span class="d-block text-center mt-3 font-weight-bold blog-cat">Python</span>
+								</div>
+							</a> *@
+
+							
+						</div>
+
+						<div class="swiper-progressbar"></div>
+						
+						
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		@* <!-- START: TESTIMONY -->
+		<section class="section section-dark section-testimony" id="testimony">
+			<div class="container">
+				<div class="section-head text-center">
+					<span>:)</span>
+					<h2>Recommendations</h2>
+				</div>
+				<div class="row mt-4">
+					<div class="col-lg-12">
+						<div class="swiper-container swiper-testimony wow fadeInUp" data-wow-duration="1.5s">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide single-testimonials ">
+									<div class="single-testimonials-in text-center p-4 b-box mx-auto">
+										<img src="images/sabya.jpeg" alt class="mx-auto b-box">
+										<p class="pt-2 mt-4 text-center"><strong>“Aditya is a very self-organized person who likes to solve problems and actively take part in everything that revolves around tech. He is also very helpful and makes a very good team member. Can handle tasks and responsibilities very tackfully as well as tries to overdeliver on the given tasks.”</strong></p>
+										<a href="https://www.linkedin.com/in/sabyasachi-seal-4461711bb/" target="_blank" span class="font-weight-bold mt-3 d-block">Sabyasachi Seal <br> DevOps Lead, Google DSC | Ex-SDE Intern, WebKnot Tech</span></a>
+									</div>
+								</div>
+								
+
+								<div class="swiper-slide single-testimonials ">
+									<div class="single-testimonials-in text-center p-4 b-box mx-auto">
+										<img src="images/ayushi.jpeg" alt class="mx-auto b-box">
+										<p class="pt-2 mt-4 text-center">“Aditya is not only good at all things technical, but his creativity and sense of innovation are what impress people the
+										most. Working with him was a delight because his level of attention to detail is unmatched! I've never seen him shy away
+										from a challenge. He is always up for going the extra mile and reach goals as promised. Other than that, his clear sense
+										of recent technologies and tech stacks makes him a great asset. Aditya ensures that he puts in proper planning and
+										resources to achieve the promised end goal.”</p>
+										<a href="https://www.linkedin.com/in/ayushi-dey-390/" target="_blank" span class="font-weight-bold mt-3 d-block">Ayushi Dey <br> SDE  Thoughtworks, Ex-Convenor - IIC TMSL</span></a>
+									</div>
+								</div>
+
+								<div class="swiper-slide single-testimonials ">
+									<div class="single-testimonials-in text-center p-4 b-box mx-auto">
+										<img src="images/vivek.jpeg" alt class="mx-auto b-box">
+										<p class="pt-2 mt-4 text-center">“I have worked with Aditya over several projects. Aditya is very goal oriented and hard working. He loves to solve
+										problems and try different approaches to solve the problem efficiently. He possess good team spirit and strong
+										leadership skills. Aditya gives his heart to any project and delivers everytime up to the mark.”</p>
+										<a href="https://www.linkedin.com/in/vivek-kumar-agarwal-49b481196/" target="_blank" span
+											class="font-weight-bold mt-3 d-block">Vivek Kr. Agarwal<br> SDE  LTIMindtree, Ex-Convenor - CIIC Geekonix</span></a>
+									</div>
+								</div>
+
+								<div class="swiper-slide single-testimonials ">
+									<div class="single-testimonials-in text-center p-4 b-box mx-auto">
+										<img src="images/sreejita.jpeg" alt class="mx-auto b-box">
+										<p class="pt-2 mt-4 text-center">“I have worked with many professionals throughout my journey, but Aditya was a unique one to work. I started my work journey with him, and he helped me understand the company’s internal process. His work ethics are pristine, and he is easily adjustable to a given situation. His ability to go out of his way to help others has made him stand out. Thanks a lot, man! You made the transition smooth and more comfortable. He is the most profound person I have met, and his ability to tackle any problem is remarkable and with a warm smile. Aditya would become an appreciated member of any team.”</p>
+										<a href="https://www.linkedin.com/in/sreejita-mukhopadhyay-b83256234/" target="_blank" span class="font-weight-bold mt-3 d-block">Sreejita Mukhopadhyay <br> Graphic Lead  IIC TMSL and Eclectica TMSL</span></a>
+									</div>
+								</div>
+
+				
+
+
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="testimony-nav">
+							<a href="#" class="swiper-button-next"></a>
+							<a href="#" class="swiper-button-prev"></a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END: TESTIMONY -->
+ *@
+		<!-- START: CTA -->
+		<section class="section  section-freelance section-light text-center ">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-head wow fadeInUp" data-wow-duration="1.5s">
+							<h2>Let's work together!</h2>
+						</div>
+						<div class="mt-5 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
+							<a href="../files/arunresumedotnet.PDF" target="_blank" class="btn btn-outline hover-state">Here's my CV</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END: CTA -->
+
+		
+
+		<!-- START: CONTACT -->
+		<section class="section section-dark section-contact" id="contact">
+			<div class="container">
+				<div class="section-head">
+					<span>Reach out to me</span>
+					<h2>Contact </h2>
+				</div>
+
+				<div class="contact-map mt-5">
+					<h5 class="section-subHead mb-4"> My Location</h5>
+					<div class="contact-map--container b-box wow fadeInUp" id="map" data-wow-duration="1.5s">
+				</div>
+
+				</div>
+			</div>
+			<style>
+				#map {
+					height: 400px;
+					width: 100%;
+					border-radius: 8px;
+				}
+			</style>
+			<!-- Leaflet CSS -->
+			<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+			<!-- Leaflet JS -->
+			<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+				  // Initialize map only once
+				  var map = L.map('map').setView([22.27449, 70.77851], 12);
+
+				  // Use Stadia Satellite Tiles
+				  var Stadia_AlidadeSatellite = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.{ext}', {
+					minZoom: 0,
+					maxZoom: 20,
+					attribution: '&copy; CNES, Distribution Airbus DS, © Airbus DS, © PlanetObserver (Contains Copernicus Data) | &copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+					ext: 'jpg'
+				  });
+
+				  Stadia_AlidadeSatellite.addTo(map);
+
+				  // Optional Marker
+				  L.marker([22.27449, 70.77851]).addTo(map)
+					.bindPopup('Rajkot, Gujarath :)')
+					.openPopup();
+				});
+			</script>
+
+
+
+			<div class="contact-Otherdetails">
+				<div class="container">
+					@*@<div class="contact-details">
+						<h5 class="section-subHead pt-5 mb-4"> Get in Touch</h5>
+						<div class="row">
+							<div class="col-md-4 col-lg-4">
+								<div class="contact-details--panel p-4 b-box text-center hover-state wow fadeInUp" data-wow-duration="1.5s">
+									<div class="mb-4">
+										<i class="fa-brands fa-hashnode"></i>
+									</div>
+									<div class="mt-2">
+										<a href="https://adityaseth777.hashnode.dev/" class>My Latest Articles</a>
+										<p class="mt-1 font-weight-bold ">Blog</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-lg-4">
+								<div class="contact-details--panel p-4 b-box text-center hover-state wow fadeInUp" data-wow-duration="1.5s">
+									<div class="mb-4">
+										<i class="fa-brands fa-discord"></i>
+									</div>
+									<div class="mt-2">
+										<a href="https://adityaseth.in/discord" class>adityaseth777</a>
+										<p class="mt-1 font-weight-bold ">Feel free to DM</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-lg-4">
+								<div class="contact-details--panel p-4 b-box text-center hover-state wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
+									<div class="mb-4">
+										<i class="fas fa-envelope  "></i>
+									</div>
+									<div class="mt-2">
+										<a href="/cdn-cgi/l/email-protection#f794989983969483b796939e838e968492839fd99e99c88482959d929483cab29a969e9bd2c5c798809e9990d2c5c78398d2c5c796939e838e968492839fd99e99d19598938ecab0859292839e999084d2c5b4d2c7b6bed2c5c7969ad2c5c7d2c2b599969a92d2c2b3d9d2c5c7bed2c5c79d828483d2c5c794969a92d2c5c7969485988484d2c5c78e988285d2c5c7809295849e8392d2c5c7969993d2c5c7809684d2c5c79f98879e9990d2c5c78398d2c5c783969b9cd2c5c78398d2c5c78e9882d2c5c79695988283d2c5c784989a92839f9e9990d9"><span class="__cf_email__" data-cfemail="63000c0d170200172302070a171a021006170b4d0a0d">[email&#160;protected]</span></a>
+										<p class="mt-1 font-weight-bold ">Email Me</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> *@
+					<div class="contact-form mt-5">
+						<!--<form method="post" action="php/contact.php" id="contactForm" data-toggle="validator">!-->
+						<form target="_self" action="https://formspree.io/f/xqaqdrjd" method="POST">
+							<h5 class="section-subHead mb-2"> Contact Form</h5>
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="form-group mt-3 wow fadeInUp" data-wow-duration="1.5s">
+										<input name="name" id="name" type="text" class="form-control b-box" placeholder="Your Name *" required>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group mt-3 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
+										<input name="email" id="email" type="email" class="form-control b-box" placeholder="Your Email *" required>
+									</div>
+								</div>                                
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="form-group mt-3 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".3s">
+										<input type="text" class="form-control b-box" id="subject" placeholder="Your Subject.." required>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="form-group mt-3 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".4s">
+										<textarea name="comments" id="comments" rows="4" class="form-control b-box" placeholder="Your message..."></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12 mt-4 mb-5 text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">
+									<button type="submit" class="submitBnt btn hover-state">Send</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END: CONTACT -->
+
+		
+	</div>
+
+
+	<!-- JAVASCRIPTS -->
+
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/vendor.js"></script>
+
+	<!-- Map -->
+@* 	<script src="js/map.js"></script>
+ *@@* 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD79MY72taVRlZVX2DU6L5PXOh3ezUUKMc&amp;callback=initMap" async defer></script>
+ *@
+	<!-- Ripple Effect -->
+	<script src="js/jquery.ripples-min.js"></script>
+
+	<!-- Contact Js -->
+	<script src="js/contact.js"></script>
+	
+	<!-- Custom Js -->
+	<script src="js/custom.js"></script>
+
+	<script>
+
+		$('#home').ripples({
+			resolution: 400,
+			dropRadius: 20,
+			perturbance: 0.02
+		});
+
+	</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9396d4e2f8533a5d","version":"2025.4.0-1-g37f21b1","r":1,"token":"31e0757424974c6e8126dffb328954fe","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}' crossorigin="anonymous"></script>
+
+</body>
+</html>
